@@ -24,9 +24,6 @@ export async function POST(request: Request) {
 
     const repoDataMap = new Map<string, RepositoryData>()
 
-    console.table({ query })
-    console.table(results, ["document_key", "score"])
-
     for (const result of results) {
       if (
         result.document_key && 
@@ -35,25 +32,12 @@ export async function POST(request: Request) {
       ) {
         const metadata = result.metadata
         const [, owner, repo] = result.document_key.split('/').slice(-3)
-        let description
-        try {
-          description = decodeURIComponent(metadata.description)
-        } catch {
-          description = metadata.description
-        }
-
-        let language
-        try {
-          language = decodeURIComponent(metadata.language)
-        } catch {
-          language = metadata.language
-        }
    
         const repoData: RepositoryData = {
           name: owner + '/' + repo,
-          description: description,
+          description: metadata.description,
           stargazers_count: metadata.stars,
-          language: language,
+          language: metadata.language,
           html_url: result.document_key,
           score: result.score
         }

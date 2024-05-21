@@ -3,7 +3,6 @@
 import { Inter as FontSans } from "next/font/google"
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { cn } from "@/lib/utils"
-import { Suspense } from "react"
 
 const fontSans = FontSans({
   subsets: ["latin"],
