@@ -5,7 +5,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Features
 
 - Search for GitHub repositories using natural language.
-- Uses [Trufflepig](https://www.trufflepig.ai/), an end to end semantic search API, to index GitHub repositories and provide accurate search results.
+- Uses [trufflepig](https://www.trufflepig.ai/), an end to end semantic search API, to index GitHub repositories and provide accurate search results.
 
 ## Getting Started
 
