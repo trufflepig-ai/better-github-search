@@ -9,7 +9,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-To get started you'll need to create a Trufflepig account and obtain an API key as well as a GitHub access token. You can follow the instructions in the [Trufflepig documentation](https://docs.trufflepig.ai/quickstart) to set up your account and obtain your API key.
+To get started you'll need to create a Trufflepig account and obtain an API key as well as a GitHub access token. You can follow the instructions in the [trufflepig documentation](https://docs.trufflepig.ai/quickstart) to set up your account and obtain your API key.
 
 Run the development server:
 
@@ -21,6 +21,7 @@ Then open [http://localhost:3000](http://localhost:3000) with your browser to se
 
 ## Indexing GitHub Repositories
 
-To index GitHub repositories, you can use the [Trufflepig](https://www.trufflepig.ai/) API. This API provides a simple and efficient way to index GitHub repositories and perform semantic search.
-index_github.ipynb contains the code to index GitHub repositories using Trufflepig.
+To index GitHub repositories, we used the [trufflepig](https://www.trufflepig.ai/) API. This API provides a simple and efficient way to index unstructured data and perform semantic search. index_github.ipynb contains the code we used to index GitHub repositories in trufflepig.
+
+You can use this repo as an example of how to quickly setup a custom semantic search engine on your unstructured dataset.
 
