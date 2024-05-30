@@ -24,7 +24,7 @@
     "styled-components": "^6.1.9",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "trufflepig-node": "^0.1.5",
+    "trufflepig-node": "^0.1.6",
     "url": "^0.11.3"
   },
   "devDependencies": {
